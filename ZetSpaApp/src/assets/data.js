@@ -12,7 +12,7 @@ var menus = [
         isActive: false
     },
     {
-        href: '#/main/privilege',
+        href: '#/main/customer',
         caption: '会员管理',
         icon: 'ti-id-badge',
         isActive: false
