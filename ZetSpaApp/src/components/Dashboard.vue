@@ -1,209 +1,141 @@
 <template>
-    <div>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
-      </div>
-    </nav>
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="card">
+						<div class="content">
+							<div class="row">
+								<div class="col-xs-5">
+									<div class="icon-big icon-warning text-center">
+										<i class="ti-server"></i>
+									</div>
+								</div>
+								<div class="col-xs-7">
+									<div class="numbers">
+										<p>Capacity</p>
+										105GB
+									</div>
+								</div>
+							</div>
+							<div class="footer">
+								<hr />
+								<div class="stats">
+									<i class="ti-reload"></i> Updated now
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="card">
+						<div class="content">
+							<div class="row">
+								<div class="col-xs-5">
+									<div class="icon-big icon-success text-center">
+										<i class="ti-wallet"></i>
+									</div>
+								</div>
+								<div class="col-xs-7">
+									<div class="numbers">
+										<p>Revenue</p>
+										$1,345
+									</div>
+								</div>
+							</div>
+							<div class="footer">
+								<hr />
+								<div class="stats">
+									<i class="ti-calendar"></i> Last day
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="card">
+						<div class="content">
+							<div class="row">
+								<div class="col-xs-5">
+									<div class="icon-big icon-danger text-center">
+										<i class="ti-pulse"></i>
+									</div>
+								</div>
+								<div class="col-xs-7">
+									<div class="numbers">
+										<p>Errors</p>
+										23
+									</div>
+								</div>
+							</div>
+							<div class="footer">
+								<hr />
+								<div class="stats">
+									<i class="ti-timer"></i> In the last hour
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="card">
+						<div class="content">
+							<div class="row">
+								<div class="col-xs-5">
+									<div class="icon-big icon-info text-center">
+										<i class="ti-twitter-alt"></i>
+									</div>
+								</div>
+								<div class="col-xs-7">
+									<div class="numbers">
+										<p>Followers</p>
+										+45
+									</div>
+								</div>
+							</div>
+							<div class="footer">
+								<hr />
+								<div class="stats">
+									<i class="ti-reload"></i> Updated now
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
+				<div class="col-md-12">
+					<div class="card">
+						<div class="header">
+							<h4 class="title">Users Behavior</h4>
+							<p class="category">24 Hours performance</p>
+						</div>
+						<div class="content">
+							<div id="chartHours" class="ct-chart"></div>
+							<div class="footer">
+								<div class="chart-legend">
+									<i class="fa fa-circle text-info"></i> Open
+									<i class="fa fa-circle text-danger"></i> Click
+									<i class="fa fa-circle text-warning"></i> Click Second Time
+								</div>
+								<hr>
+								<div class="stats">
+									<i class="ti-reload"></i> Updated 3 minutes ago
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          </div>
-
-          <h2 class="sub-header">Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-      
 </template>
+<script>
+    export default {};
+</script>
+<style>
+
+</style>
